@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import { parsePhoneNumberFromString } from 'libphonenumber-js';
+import { parsePhoneNumberFromString } from 'libphonenumber-js/max';
 import utils, { getCountry, setCaretPosition } from '../utils';
 import clickOutside from '../directives/click-outside';
 
@@ -102,19 +102,6 @@ function getDefault(key) {
   }
   return value;
 }
-
-// let examples = null;
-// const getExamples = () => new Promise(
-//   (resolve) => (
-//     examples
-//       ? resolve(examples)
-//       : import('libphonenumber-js/examples.mobile.json')
-//         .then((results) => {
-//           examples = results;
-//           resolve(results);
-//         })
-//   ),
-// );
 
 export default {
   name: 'VueTelInput',
