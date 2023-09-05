@@ -20,13 +20,6 @@
     "lint:fix": "vue-cli-service lint --fix",
     "prepublishOnly": "npm run build && npm run build:modern"
   },
-  "files": [
-    "dist/",
-    "dist-modern/"
-  ],
-  "main": "dist/vue-tel-input.umd.min.js",
-  "unpkg": "dist/vue-tel-input.umd.min.js",
-  "jsdelivr": "dist/vue-tel-input.umd.min.js",
   "dependencies": {
     "core-js": "^3.14.0",
     "libphonenumber-js": "^1.10.12"
